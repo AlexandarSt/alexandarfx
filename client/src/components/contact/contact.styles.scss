@@ -1,0 +1,284 @@
+$green: #BFDD3B;
+
+@mixin inputs {
+    width: 100%;
+    border: 1px solid #BFDD3B;
+    border-radius: 0;
+    height: 45px;
+    background-color: transparent;
+    transition: all 0.5s;
+       
+        &:focus{
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem grey;
+        }               
+}
+
+.contact{
+    display: flex;
+    flex-flow: column;
+
+    .maps{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+    }
+    .contact-data{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        z-index: 1;
+        background-color: #f2f2f2;
+        padding: 80px 50px;
+        box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.15);
+        margin: 210px 150px 100px 150px;
+        // width: 70%;
+        border-radius: 5px;      
+
+        .contact-info{
+            
+            ul {
+                display: block;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 40px;
+                    display: flex;
+                    align-items: center;
+
+                    i{
+                        padding-right: 10px;
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        .contact-form{
+
+            form{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                // grid-template-rows: 45px 150px auto;
+                grid-template-areas:  
+                    "input-name input-email"
+                    "message message"
+                    "button .";
+
+                #input-name{
+                    @include inputs();
+                    grid-area: input-name;            
+                }
+
+                #input-email{
+                    @include inputs();
+                    grid-area: input-email;            
+                }
+                
+                textarea{
+                    @include inputs();
+                    height: 150px !important;
+                    grid-area: message;
+                }
+
+                .form-error{
+                    color: red;
+                }
+
+                .form-success{
+                    color: $green;
+                }
+            }            
+
+            .form-button {
+                grid-area: button;
+                width: 60%;
+                letter-spacing: 2px;
+                background-color: black;
+                color: #ddd;
+                line-height: 40px;
+                display: inline-block;
+                border-radius: 0;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                border: none;
+                transition: 0.5s;
+
+                &:hover{
+                    color: #BFDD3B;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+//  .contact-section{
+//      position: relative;
+//      z-index: 1;
+//  }
+// .contact-wrap{
+//     background-color: #f2f2f2;
+//     padding: 80px 50px;
+//     box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.15);
+//     margin-top: 110px;
+//     border-radius: 5px;
+// }
+// .contact-info ul li{
+//     line-height: 40px;
+//     display: flex;
+//     align-items: center;
+// }
+// .contact-info ul li i{
+//     margin-right: 10px;
+//     color: $green;
+//     font-size: 20px;
+// }
+// .contact-info ul li{
+//     font-family: "Roboto Slab",sans-serif;
+//     font-weight: 600;
+//     font-size: 12px;
+// }
+
+// /*Contact Form*/
+// .contact-form .form-control{
+//     border: 1px solid $green;
+//     border-radius: 0;
+//     height: 45px;
+//     background-color: transparent;
+// }
+// .contact-form .form-control.message{
+//     height: 150px;
+// }
+
+// /*Google Map*/
+// #google_map{
+//    width: 100%;
+//    height: 350px;
+//    position: absolute;
+//    left: 0;
+//    top: 0;
+//    z-index: -1;
+//  }
+
+//     .container{
+//         width: 100%;
+//         padding-right: 15px;
+//         padding-left: 15px;
+//         margin-right: auto;
+//         margin-left: auto;
+//     }
+//     .row{
+//         display: -webkit-box;
+//         display: -ms-flexbox;
+//         display: flex;
+//         -ms-flex-wrap: wrap;
+//         flex-wrap: wrap;
+//         margin-right: -15px;
+//         margin-left: -15px;
+//     }
+//     .contact-wrap {
+//         background-color: #f2f2f2;
+//         padding: 80px 50px;
+//         box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.15);
+//         margin-top: 110px;
+//         border-radius: 5px;
+//     }
+//     .col-md-6{
+//         position: relative;
+//         width: 100%;
+//         min-height: 1px;
+//         padding-right: 15px;
+//         padding-left: 15px;
+//     }
+//     .contact-info ul li i {
+//         margin-right: 10px;
+//         color: #BFDD3B;
+//         font-size: 20px;
+//         font-family: themify;
+//         speak-as: none;
+//         font-style: normal;
+//         font-weight: 400;
+//         font-variant: normal;
+//         text-transform: none;
+//         line-height: 1;
+//         -webkit-font-smoothing: antialiased;
+//         -moz-osx-font-smoothing: grayscale;
+//     }
+//     .form-group {
+//         margin-bottom: 1rem;
+//     }
+//     .col-sm-6{
+//         position: relative;
+//         width: 100%;
+//         min-height: 1px;
+//         padding-right: 15px;
+//         padding-left: 15px;
+//     }
+//     .contact-form .form-control {
+//         border: 1px solid #BFDD3B;
+//         border-radius: 0;
+//         height: 45px;
+//         background-color: transparent;
+//     }
+//     .form-control{
+//         transition: all 0.5s;
+//     }
+//     .form-control {
+//         display: block;
+//         width: 100%;
+//         padding: .375rem .75rem;
+//         font-size: 1rem;
+//         line-height: 1.5;
+//         color: #495057;
+//         background-color: #fff;
+//         background-clip: padding-box;
+//         border: 1px solid #ced4da;
+//         border-radius: .25rem;
+//         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+//         &:focus{
+//             color: #495057;
+//             background-color: #fff;
+//             border-color: #80bdff;
+//             outline: 0;
+//             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//         }
+//     }
+//     .col-md-12{
+//         position: relative;
+//         width: 100%;
+//         min-height: 1px;
+//         padding-right: 15px;
+//         padding-left: 15px;
+//     }
+//     .message {
+//         height: 150px;
+//     }
+//     .default-btn {
+//         letter-spacing: 2px;
+//         background-color: #222;
+//         color: #ddd;
+//         line-height: 40px;
+//         display: inline-block;
+//         padding: 0 25px;
+//         border-radius: 0;
+//         font-size: 12px;
+//         text-transform: uppercase;
+//         font-weight: 600;
+
+//         &:hover{
+//             background-color: #333;
+//             color: #BFDD3B;
+//             cursor: pointer;
+//         }
+//     }
+    

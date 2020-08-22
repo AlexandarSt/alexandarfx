@@ -1,0 +1,18 @@
+.home{
+    .parallax{
+        background: url('../../assets/pozadina.jpg') no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: auto;
+        height: 100vh;
+    }
+
+    .homepage-text{
+        margin: 70px 0;
+        width: 50%;
+        position: relative;
+        left: 25%;
+    }
+}
+
+

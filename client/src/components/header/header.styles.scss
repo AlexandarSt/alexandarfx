@@ -1,0 +1,57 @@
+$green: #BFDD3B;
+
+.header{
+    display: flex;
+    background: black;
+    align-items: center;
+    padding: 15px;
+    z-index: 999;
+    // border-bottom: 1px solid darkgrey;
+
+    .logo{
+        // margin: 10px;
+
+        img{
+            width: 200px;
+        }
+    }
+
+    .navigation{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+
+            li{
+                padding: 10px;
+                text-transform: uppercase;
+                font-weight: 600;
+
+                a{
+                    color: white;
+                    transition: 0.5s;
+
+                    &:hover{
+                        color: $green;
+                    }
+                }
+
+                .active-nav{
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .cart{
+        margin-right: 50px;
+
+        img{
+            width: 50px;
+        }
+    }
+}
+
