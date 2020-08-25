@@ -1,11 +1,36 @@
 $green: #BFDD3B;
 
+@mixin border{
+    max-width: 0%;
+    background-color: $green;
+}
+
+@keyframes slide-in{
+    from {
+        max-width: 0;
+    }
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes slide-out{
+    from {
+        max-width: 100%;
+    }
+    to {
+        max-width: 0;
+    }
+}
+
 .header{
     display: flex;
+    width: -webkit-fill-available;
     background: black;
     align-items: center;
     padding: 15px;
-    z-index: 999;
+    // position: sticky;
+    // top: 0;
     // border-bottom: 1px solid darkgrey;
 
     .logo{
@@ -24,6 +49,7 @@ $green: #BFDD3B;
         ul{
             display: flex;
             list-style-type: none;
+            padding: 0;
 
             li{
                 padding: 10px;
@@ -47,11 +73,24 @@ $green: #BFDD3B;
     }
 
     .cart{
-        margin-right: 50px;
+        // width: 200px;
 
         img{
             width: 50px;
         }
     }
 }
+
+.slide-in {
+    height: 1px;
+    animation: slide-in 2s forwards;
+    @include border();
+}
+.slide-out {
+    animation: slide-out 2s forwards;
+    height: 0;
+    @include border();
+}
+
+
 

@@ -43,7 +43,7 @@ const Contact = () => {
                 })
                 setTimeout(() => {
                     setSuccess(false)
-                }, 2000)
+                }, 4000)
                 setValues(INITIAL_STATE)
             } else {
                 setSubmitting(false)

@@ -1,0 +1,28 @@
+$green: #BFDD3B;
+
+.cart-icon {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-right: 10px;
+  
+    .shopping-icon {
+      width: 100px;
+      height: 100px;
+      color:white;
+    }
+  
+    .item-count {
+      position: absolute;
+      top: 49%;
+      font-size: 25px;
+      font-weight: bold;
+      bottom: 12px;
+      color: $green;
+    }
+  }
+  

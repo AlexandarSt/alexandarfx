@@ -1,13 +1,31 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link, NavLink} from 'react-router-dom'
 import logo from '../../assets/aca-logo-test.png'
-import cart from '../../assets/pedal.png'
+// import cart from '../../assets/fx-pedal.svg'
+import CartIcon from '../cart-icon/cart-icon.component'
 
 import './header.styles.scss'
 
 const Header = () => {
+
+    const [top, setTop] = useState(false)
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            // console.log(window.scrollY)
+            const scrolltop = window.scrollY < 1
+            if (scrolltop !== true) {
+                setTop(true)
+            } else {
+                setTop(false)
+            }
+        })
+        
+    }, [])
+
     return (
-        <div className='header'>
+        <div style={{'position' : 'sticky', 'top' : '0', 'zIndex' : '999'}}>
+        <div className='header'>   
                 <div className='logo'>
                     <Link to="/">
                         <img src={logo} alt="logo" />
@@ -33,10 +51,13 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className='cart'>
-                    <Link to='/cart'>
-                        <img src={cart} alt='Pedalboard'/>
+                    <Link to='/checkout'>
+                        {/*<img src={cart} alt='Pedalboard'/>*/}
+                        <CartIcon />
                     </Link>
                 </div>             
+        </div>
+        <div className={top ? 'slide-in' : 'slide-out'}></div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, Route, BrowserRouter} from 'react-router-dom'
+import {Switch, Route} from 'react-router-dom'
 
 import './App.css'
 
@@ -13,7 +13,6 @@ import Footer from './components/footer/footer.component'
 function App() {
   return (
     <div>
-      <BrowserRouter>
         <Header />
           <Switch>
             <Route exact path='/' component={HomePage} />
@@ -22,7 +21,6 @@ function App() {
             <Route exact path='/contact' component={ContactPage} />
           </Switch>
         <Footer />  
-      </BrowserRouter>
     </div>
   );
 }
