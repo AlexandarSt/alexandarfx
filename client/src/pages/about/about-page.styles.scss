@@ -1,0 +1,23 @@
+$green: #BFDD3B;
+
+.about{
+    padding: 50px 50px;
+    text-align: center;
+
+    h1{
+        text-transform: uppercase;
+        font-weight: unset;
+    }
+
+    img{
+        width: 300px;
+        margin-bottom: 100px;
+    }
+
+    hr{
+        margin: 0 70px 50px 70px;
+        height: 1px;
+        background-color: $green;
+        border: none; 
+    }
+}

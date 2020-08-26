@@ -1,6 +1,11 @@
 import React from 'react'
+import {createStructuredSelector} from 'reselect'; 
+import {selectCollectionsForPreview} from '../../redux/shop/shop.selectors'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
+
+import PedalFilter from '../pedal-filter/pedal-filter.component'
+import PedalGallery from '../pedal-gallery/pedal-gallery.component'
 
 import './products.styles.scss'
 
@@ -31,24 +36,31 @@ const Products = ({pedals}) => {
                 </ul>
             </div>
             <div className='pedals'>
-                <div className='pedal-filter'>
-                    Filter pedala
+                <div className='filter'>
+                    <p>Guitar pedals</p>
+                    <div className='pedal-filters'>
+                        {
+                            pedals.map((pedal) => (
+                                <PedalFilter key={pedal.id} filterName={pedal.title}/> 
+                                ))
+                        }
+                    </div>
                 </div>
                 <div className='gallery'>
-                    Galerija sa slikama
-
-                    <div className='test'>
-                        
-                    </div>
-
+                    {
+                        pedals.map((pedal) => (
+                            <PedalGallery key={pedal.id} items={pedal.items}/>
+                        ))
+                    
+                    }
                 </div>
             </div>
         </div>
     )
 }
 
-const mapStateToProps = ({pedals}) => ({
-    pedals
+const mapStateToProps = createStructuredSelector({
+    pedals: selectCollectionsForPreview
 })
 
 export default connect(mapStateToProps)(Products)
