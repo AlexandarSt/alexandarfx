@@ -11,20 +11,20 @@
         }
 
         img{
-            width: 800px;
+            width: 600px;
 
             @media screen and (max-width: 845px){
-                width: 600px;
+                width: 400px;
             }
         }
 
         p{
-            width: 800px;
+            width: 600px;
             margin: 0 0 20px 0;
             text-align: left;
         }
 
-        @media screen and (max-width: 1720px){
+        @media screen and (max-width: 1500px){
             flex-direction: column;
         }
     }
