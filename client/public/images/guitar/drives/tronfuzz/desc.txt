@@ -1,0 +1,13 @@
+Description
+Alexander FX Tron Fuzz is a versatile silicon fuzz pedal that has the following controls:
+
+– Fuzz
+– Tone
+– Volume
+– PW (Pulse Width)
+– Release/Push (controls the input signal strength)
+– Subs (controls the output of bass frequencies in order to better adapt the device to different types of instruments)
+
+This device is based on Zvex Mastotron fuzz. It is possible to further improve the relay bypass system.
+
+PRICE: 144

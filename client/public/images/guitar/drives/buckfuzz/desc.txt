@@ -1,0 +1,15 @@
+Description
+Alexander FX Buck Fuzz is a versatile fuzz based on the Way Huge Swollen Pickle MkII variant of the pedal with 7 external potentiometers instead of 5. The design is a silicone fuzz based on the Big muff variation of the nineties, with the addition of classic muff colors can also be gifted fuzz, crunch fuzz / distortion and heavily scooped voicing.
+
+The pedal has following controls:
+Sustain – classic gain control
+Loudness – volume control
+Filter – tone control
+Scoop – determines the level of the mid range of frequencies from Mid Scoop to Flat Midrange
+Crunch – affects the compression and intensities of Fuzz
+Clip – Changes the clipping signal by varying the impact of two sets of clips
+Voice – changes the intensity of the Scoop control
+
+The device can be upgraded with the latest relay bypass system for a price of 20 EUR.
+
+PRICE: 157

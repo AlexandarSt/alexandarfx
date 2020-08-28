@@ -1,0 +1,8 @@
+Description
+Loop Mixer is a device with which you can actively mix the pure guitar and bass guitar with the signal obtained by passing the base signal through a loop in which any effect can be connected. This is suitable for bass guitarists who have effects that are primarily designed for guitarists and cut off a lower range of frequencies, the so-called low end.
+
+With this device you can use any guitar effect on bass guitars and if you lose the lower frequencies, restore them by actively mixing dry and wet signals. The active gain level is + 16db.
+
+The advantage of using two active mixing controls in relation to blend control lies in the ability to better maintain the level of the wet signal, which is necessary in situations where the drive or fuzz pedal emits a stronger signal that causes additional clips in the preamp section of the amplifier.
+
+PRICE: 130

@@ -6,66 +6,39 @@ const GUITAR_PEDAL_DATA = {
     items: [
       {
         id: 1,
-        name: 'Echo Modulation',
-        imageUrl: '/images/guitar/delays/echomodulation/echomodulation1.jpg',
-        price: 250,
+        name: 'Modulation Multieffect',
+        imageUrl: '/images/guitar/delays/modulationmultieffect/echomodulation1.jpg',
+        price: 248,
         category: 'delay',
         video: '',
-        description: ''
+        description: '<p>The Echo Modulation Multieffect is a blend of two well-proven Alexander FX pedals that are the essentials of most of the pedalbord at the end of the chain. The first in the chain is a completely analog chorus effect, which is a clone of the legendary Boss CE2 with the addition of speed mode while the other in the chain is a two-channel delay effect with two mix controls.</p><p>The device is equipped with state-of-the-art relay bypass system that allows for long, safe and elegant operation without replacing the true bypass switch. The system uses a metal clickless key and a relay electronic system for switching the state that is being used by more and more foreign boutique manufacutrers.</p>'
       },
       {
         id: 2,
-        name: 'Delay 2',
-        imageUrl: '/images/guitar/delays/echomodulation/echomodulation2.jpg',
-        price: 500,
+        name: 'Double Echo',
+        imageUrl: '/images/guitar/delays/doubleecho/doubleecho1.jpg',
+        price: 222,
         category: 'delay',
         video: '',
-        description: ''
+        description: '<p>The Alexander FX Double Echo presents two completely independent pedals in one case. What you can get with this concept are two independent delay, rhythm and solo stocks as well as the ability to stack two delay effects.</p><p>Simultaneously using two delay pedals (stacking) you get great sound features that you can not get using a single delay effect.</p><p>The device can be upgraded with the latest relay bypass system if you wish. The price of the upgrade is 10 EUR per effect.</p><p>By purchasing the Alexander FX Double Echo effect, you get a warranty for one year and you will receive any service in the future.</p>'
       },
       {
         id: 3,
-        name: 'Delay 3',
-        imageUrl: 'https://i.etsystatic.com/16717838/r/il/0ce25e/1433373025/il_570xN.1433373025_639k.jpg',
-        price: 700,
+        name: 'Free Bird Stereo Delay',
+        imageUrl: '/images/guitar/delays/freebirdstereodelay/freebird1.jpg',
+        price: 220,
         category: 'delay',
         video: '',
-        description: ''
+        description: 'FreeBird stereo delay is the most sophisticated delay model that appeared in my offer so far. It is intended for musicians who need a warm sound of analog delay effect, modulation and tap tempo to fine-tune the repetition delay time. The controls are as follows: – Bypass – starts the effect or introduces a bypass mode – Tap tempo – allows fine tuning of the repetition delay time by pressing the key – Mod – Starts the modulation (spanned chorus effect) – Mix – determines the level of repetition delay delay delay – Delay – Manual tuning Repeat rate – Feedback Specifies the delay effect of the delay effect – Mod Delay – Specifies the repetition rate when the modulation starts. Not active in standard delay mode. – Depth – Determines the depth of the modulation effect – Speed ​​- Specifies the speed of the modulation effect – Dry – Wet / Dry – This manual switch manipulates with stereo output n 2 thus allowing a clean output with no effect (dry) or full effect on the output (Wet / Dry) Tb / Buffer – This manual switch affects the bypass mode of the device, which can be a true bypass without any effect on the signal or buffer that changes the impedance and refreshes the signal, raising the level of higher and medium frequencies that are lost due to the impact of long cables. The device is made from high quality parts for superior sound and long lasting work.'
       },
       {
         id: 4,
-        name: 'Delay 4',
-        imageUrl: 'https://i.etsystatic.com/16717838/r/il/0ce25e/1433373025/il_570xN.1433373025_639k.jpg',
-        price: 1000,
+        name: 'Warm Echo Delay',
+        imageUrl: '/images/guitar/delays/warmechodelay/warmecho1.jpg',
+        price: 131,
         category: 'delay',
         video: '',
-        description: ''
-      },
-      {
-        id: 5,
-        name: 'Delay 5',
-        imageUrl: 'https://i.etsystatic.com/16717838/r/il/0ce25e/1433373025/il_570xN.1433373025_639k.jpg',
-        price: 2000,
-        category: 'delay',
-        video: '',
-        description: ''
-      },
-      {
-        id: 6,
-        name: 'Delay 6',
-        imageUrl: 'https://i.etsystatic.com/16717838/r/il/0ce25e/1433373025/il_570xN.1433373025_639k.jpg',
-        price: 5000,
-        category: 'delay',
-        video: '',
-        description: ''
-      },
-      {
-        id: 7,
-        name: 'Delay 7',
-        imageUrl: 'https://i.etsystatic.com/16717838/r/il/0ce25e/1433373025/il_570xN.1433373025_639k.jpg',
-        price: 7000,
-        category: 'delay',
-        video: '',
-        description: ''
+        description: '<p>High quality delay pedal known for analogue voicing repeats, warmer sound compared to standard digital delay pedals. The sound of this pedal is the same Deep Blue Delay, done according to the original scheme. Max delay time is about 600 ms.</p><p>The pedal can be upgraded with the most up-to-date relay bypass system for an extra charge of 20 EUR.</p>'
       }
     ]
   },

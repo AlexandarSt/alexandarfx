@@ -1,0 +1,37 @@
+Description
+Uno Comp is a high quality compressor, which is based on the esteemed
+Vintage American Ross Compressor. Uno Comp has been upgraded with additional
+controls to suit the needs of modern guitarists, whether in their arsenal they
+have guitars with humbucker or single-coil magnets, guitars with active or
+passive electronics.
+
+Controls are as follows:
+
+Sustain – determines the compression level and therefore the length of the tone
+
+Level – Volume level, volume control
+
+Attack – determines the time after which the compressor starts when the level
+of the guitar signal exceeds a certain volume limit.
+Guitarists who use guitars with low output magnets are advised to lower
+the value of the attack in order to maintain dynamics while guitarists with
+humbucker magnets are recommended a faster attack.
+
+Clip – Input gain control that determines the level of the input signal
+strength. This control helps guitarists whose magnets on guitars have a higher
+output to avoid creating distortion in the compressor. This control also tones
+the tone, the most transparent tone is when Clip is at a minimum.
+
+The device is hand-made from high quality parts and you receive a warranty
+on its purchase.
+
+The device can be upgraded in two ways:
+
+– High headroom mod. The device can be upgraded to work at 18v and increase
+the headroom and sound quality.
+
+– Relay true bypass. The device can be upgraded with the latest true bypass relay
+starter system that has a longer life than a classic mechanical bypass system.
+
+
+PRICE: 150

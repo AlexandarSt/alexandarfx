@@ -17,11 +17,11 @@ const SinglePedal = ({pedals, match}) => (
             <div className='info-details'>
                 <h2>{pedals.name}</h2>
                 <div className='description'>
-                    <h4><i class="fas fa-angle-right arrow" aria-hidden="true"></i>Description</h4>
-                    <p>Ovde ide details o pedali</p>
+                    <h4><i className="fas fa-angle-right arrow" aria-hidden="true"></i>Description</h4>
+                    <p>{pedals.description}</p>
                 </div>
                 <div className='videos'>
-                    <h4><i class="fas fa-angle-right arrow" aria-hidden="true"></i>Videos</h4>
+                    <h4><i className="fas fa-angle-right arrow" aria-hidden="true"></i>Videos</h4>
                     <p>Ovde idu video klipovi</p>
                 </div>
                 

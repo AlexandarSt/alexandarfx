@@ -1,0 +1,14 @@
+Description
+The Alexandar Fx Integrated Booster is an upgraded clone of the legendary Tc electronic Integrated Preamp made popular in recent years by metal band Mesuggah.
+
+Controls are:
+
+Level: Determines the volmue level of the output signal (volume, gain)
+Bass, Treble: active tone controls (+ -15db)
+9v / 18v switch: The device was upgraded by a 9v input voltage doubler because it proved in practice that the Tc Integrated Preamp works better at higher voltages when the headroom is enlarged. This add-on allows you to use your standard pedal-board power of 9v and to select whether to double the voltage of the power supplying the pedal or not with the switch.
+
+The device can also be upgraded with the latest relay bypass system for long-lasting operation and a more elegant start.
+
+With the Alexandar Fx Integrated Booster you get a warranty and you will be provided with any kind of service in the future.
+
+PRICE: 145
