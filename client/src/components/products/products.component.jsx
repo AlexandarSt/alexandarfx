@@ -1,6 +1,6 @@
 import React from 'react'
 import {createStructuredSelector} from 'reselect'; 
-import {selectCollectionsForPreview} from '../../redux/shop/shop.selectors'
+import {selectPedalsForPreview} from '../../redux/shop/shop.selectors'
 import {NavLink} from 'react-router-dom'
 import {connect} from 'react-redux'
 
@@ -60,7 +60,7 @@ const Products = ({pedals}) => {
 }
 
 const mapStateToProps = createStructuredSelector({
-    pedals: selectCollectionsForPreview
+    pedals: selectPedalsForPreview
 })
 
 export default connect(mapStateToProps)(Products)

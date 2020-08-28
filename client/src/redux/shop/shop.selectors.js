@@ -2,18 +2,28 @@ import {createSelector} from 'reselect';
 
 const selectShop = state => state.shop;
 
-export const selectCollections = createSelector(
+export const selectPedals = createSelector(
     [selectShop],
     shop => shop.pedals
 )
 
-export const selectCollectionsForPreview = createSelector(
-    [selectCollections],
+export const selectPedalsForPreview = createSelector(
+    [selectPedals],
     pedals => Object.keys(pedals).map(key => pedals[key])
 )
 
-export const selectCollection = collectionUrlParam =>
+export const selectPedalsCollection = pedalsUrlParam =>
 createSelector(
-    [selectCollections],
-    pedals => pedals[collectionUrlParam]
+    [selectPedals],
+    pedals => pedals[pedalsUrlParam]
 )
+
+export const selectPedalItems = createSelector(
+        [selectPedalsForPreview],
+        pedals => pedals.map(pedals => pedals.items)
+        .reduce((acc, val) => acc.concat(val), [])
+    )
+
+    
+  
+

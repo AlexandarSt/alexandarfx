@@ -1,0 +1,125 @@
+$green: #BFDD3B;
+
+.single-pedal{
+
+
+    .big-image{
+        text-align: center;
+        margin: 100px 0;
+    
+        img{
+            max-width: 500px;
+            box-shadow: 0px 8px 6px -7px rgba(0,0,0,1);
+        }
+    }
+
+    .images-gallery{
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        background-color: lightgrey;
+        padding: 20px 50px;
+    }
+
+    .info-order{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 50px;
+
+        .info-details{
+            border: 1px solid black;
+            padding: 20px;
+
+            h2{
+                border-bottom: 1px solid lightgrey
+            }
+
+            .description{
+                border-bottom: 1px solid lightgrey
+            }
+
+            .videos{
+                border-bottom: 1px solid lightgrey
+            }
+
+            i{
+                margin-right: 5px;
+            }
+        }
+        .order-details{
+            background-color: rgb(240, 240, 240);
+            padding: 15px;
+            text-transform: uppercase;
+
+            .border{
+                border: 1px solid lightgrey;
+                padding: 15px;
+
+                .price{
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .order{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    border-top: 1px solid lightgrey;
+
+                    .quantity{
+                        width: 100px;
+
+
+                        button{
+                            width: 25px;
+                            height: 25px;
+                            text-align: center;
+                            padding: 0;
+
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+
+                        input{
+                            width: 20px;
+                            height: 20px;
+                            padding: 0;
+                            text-align: center;
+                            margin: 2px;
+                            border: 1px solid #BFDD3B;
+
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    button{
+                        height: 30px;
+                        width: 100px;
+                        background: white;
+                        border: 1px solid #BFDD3B;
+                        border-radius: 5px;
+                        padding: 2px 10px;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        
+                        &:hover{
+                            cursor: pointer;
+                            background: darkgrey;
+                            color: white;
+                            transition: 0.5s;
+                        }
+
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+

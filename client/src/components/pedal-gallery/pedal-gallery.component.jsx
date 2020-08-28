@@ -10,12 +10,12 @@ const PedalGallery = ({items, match, history}) => {
         <div className='pedal-gallery'>
             {   
                 items.map((item) => (
-                    <div key={item.id} style={{'marginBottom' : '20px'}} onClick={()=>history.push(`${match.url}${item.linkUrl}`)}>
+                    <div key={item.id} style={{'marginBottom' : '20px'}} onClick={()=>history.push(`${match.url}/${item.id}`)}>
                     {
                         // console.log(match.url)
-                        console.log(item.url)
+                        console.log(match.url)
                     }
-                        <Link to='#'><img src={item.imageUrl} alt='Pedal Image' /></Link>
+                        <Link to='#'><img src={item.imageUrl} alt='Pedal' /></Link>
                         <div className='pedal-info'>
                             <Link to='#'>{item.name}</Link>
                             <p>{item.price}€</p>

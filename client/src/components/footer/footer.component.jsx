@@ -13,19 +13,19 @@ const Footer = () => {
                 <ul>
                     <p>Social Media</p>
                     <li>
-                        <a href='https://www.facebook.com/AlexandarFx/' target='_blank'>
+                        <a href='https://www.facebook.com/AlexandarFx/' rel="noopener noreferrer" target='_blank'>
                             <i className="fa fa-facebook-square" aria-hidden="true"></i>
                             Facebook
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.instagram.com/alexandarfxpedals/?hl=sr' target='_blank'>
+                        <a href='https://www.instagram.com/alexandarfxpedals/?hl=sr' rel="noopener noreferrer" target='_blank'>
                             <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                             Instagram
                         </a>
                     </li>
                     <li>
-                        <a href='https://www.youtube.com/user/acikast' target='_blank'>
+                        <a href='https://www.youtube.com/user/acikast' rel="noopener noreferrer" target='_blank'>
                             <i className="fa fa-youtube-square" aria-hidden="true"></i>
                             YouTube
                         </a>
