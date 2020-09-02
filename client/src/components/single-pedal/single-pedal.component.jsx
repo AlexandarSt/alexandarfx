@@ -38,7 +38,8 @@ const decreaseAmount = () => {
                 <h2>{pedals.name}</h2>
                 <div className='description'>
                     <h4><i className="fas fa-angle-right arrow" aria-hidden="true"></i>Description</h4>
-                    <p>{pedals.description}</p>
+                    {/* <p>{pedals.description}</p> */}
+                    <div dangerouslySetInnerHTML={{ __html: pedals.description }} />
                 </div>
                 <div className='videos'>
                     <h4><i className="fas fa-angle-right arrow" aria-hidden="true"></i>Videos</h4>
