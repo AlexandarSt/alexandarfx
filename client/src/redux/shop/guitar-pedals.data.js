@@ -16,7 +16,7 @@ const GUITAR_PEDAL_DATA = {
       {
         id: 2,
         name: 'Double Echo',
-        imageUrl: '/images/guitar/delays/doubleecho/doubleecho1.jpg',
+        imageUrl: '/images/guitar/delays/doubleecho/doubleecho6.jpg',
         price: 222,
         category: 'delay',
         video: '',
