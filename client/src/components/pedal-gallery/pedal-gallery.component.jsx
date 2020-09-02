@@ -11,10 +11,6 @@ const PedalGallery = ({items, match, history}) => {
             {   
                 items.map((item) => (
                     <div key={item.id} style={{'marginBottom' : '20px'}}>
-                    {
-                        // console.log(match.url)
-                        console.log(match.url)
-                    }
                         <Link to='#'><img src={item.imageUrl} alt='Pedal' onClick={()=>history.push(`${match.url}/${item.id}`)}/></Link>
                         <div className='pedal-info'>
                             <Link to={`${match.url}/${item.id}`}>{item.name}</Link>

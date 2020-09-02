@@ -39,7 +39,7 @@ const Contact = () => {
                 })
                 .catch(()=>{
                     console.log('Failure! Data has NOT been sent.')
-                    alert('Error while sending message')
+                    // alert('Error while sending message')
                 })
                 setTimeout(() => {
                     setSuccess(false)

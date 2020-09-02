@@ -1,15 +1,27 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {createStructuredSelector} from 'reselect'; 
 import {selectPedalsForPreview} from '../../redux/shop/shop.selectors'
-import {NavLink} from 'react-router-dom'
+// import {bassPedals, guitarPedals} from '../../redux/shop/shop.actions'
+import {filterByGuitar, filterByBass} from '../../redux/filters/filter.actions'
+import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 import PedalFilter from '../pedal-filter/pedal-filter.component'
 import PedalGallery from '../pedal-gallery/pedal-gallery.component'
 
 import './products.styles.scss'
+import GUITAR_PEDAL_DATA from '../../redux/shop/guitar-pedals.data';
+import BASS_PEDAL_DATA from '../../redux/shop/bass-pedals.data';
 
-const Products = ({pedals}) => {
+const Products = ({pedals, filterByGuitar, filterByBass}) => {
+
+    const [instrument, setInstrument] = useState(GUITAR_PEDAL_DATA)
+
+    useEffect(() => {
+        filterByGuitar()
+    }, [])
+
+    console.log(pedals)
     return (
         <div className='products'>
             <div className='category-filter'>
@@ -17,19 +29,25 @@ const Products = ({pedals}) => {
                 <ul>
                     <li>
                         <div className='guitar-type'>
-                            <NavLink exact to='/products' activeClassName='active'>
+                            <Link to='#' onClick={() => {
+                                filterByGuitar()
+                                setInstrument(GUITAR_PEDAL_DATA)
+                                }}>
                                 Guitar Pedals
                                 <i className="fas fa-angle-right arrow"></i>
-                            </NavLink>
+                            </Link>
                             
                         </div>
                     </li>
                     <li>
                         <div className='guitar-type'>
-                            <NavLink exact to='/about' activeClassName='active'>
+                            <Link to='#' onClick={() => {
+                                filterByBass()
+                                setInstrument(BASS_PEDAL_DATA)
+                                }}>
                                 Bass Pedals
                                 <i className="fas fa-angle-right arrow"></i>
-                            </NavLink>
+                            </Link>
                             
                         </div>
                     </li>
@@ -39,11 +57,7 @@ const Products = ({pedals}) => {
                 <div className='filter'>
                     <p>Guitar pedals</p>
                     <div className='pedal-filters'>
-                        {
-                            pedals.map((pedal) => (
-                                <PedalFilter key={pedal.id} filterName={pedal.title}/> 
-                                ))
-                        }
+                        <PedalFilter instrument={instrument} />     
                     </div>
                 </div>
                 <div className='gallery'>
@@ -63,4 +77,9 @@ const mapStateToProps = createStructuredSelector({
     pedals: selectPedalsForPreview
 })
 
-export default connect(mapStateToProps)(Products)
+const mapDispatchToProps = dispatch => ({
+    filterByGuitar: () => dispatch(filterByGuitar()),
+    filterByBass: () => dispatch(filterByBass())
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Products)

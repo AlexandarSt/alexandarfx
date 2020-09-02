@@ -1,5 +1,6 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
+import ScrollToTop from 'react-router-scroll-top'
 
 import './App.css'
 
@@ -9,6 +10,7 @@ import AboutPage from './pages/about/about.page'
 import ProductsPage from './pages/products/products.page'
 import SinglePedal from './components/single-pedal/single-pedal.component.jsx'
 import ContactPage from './pages/contact/contact.page'
+import Checkout from './pages/checkout/checkout.page'
 import Footer from './components/footer/footer.component'
 
 function App() {
@@ -16,11 +18,14 @@ function App() {
     <div>
         <Header />
           <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route exact path='/about' component={AboutPage} />
-            <Route exact path='/products' component={ProductsPage} />
-            <Route exact path="/products/:id" component={SinglePedal} />
-            <Route exact path='/contact' component={ContactPage} />
+            <ScrollToTop>
+              <Route exact path='/' component={HomePage} />
+              <Route exact path='/about' component={AboutPage} />
+              <Route exact path='/products' component={ProductsPage} />
+              <Route exact path="/products/:id" component={SinglePedal} />
+              <Route exact path='/contact' component={ContactPage} />
+              <Route exact path='/checkout' component={Checkout} />
+            </ScrollToTop>
           </Switch>
         <Footer />  
     </div>

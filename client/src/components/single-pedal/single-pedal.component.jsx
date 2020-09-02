@@ -1,11 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {selectPedalItems} from '../../redux/shop/shop.selectors'
+import {addItems} from '../../redux/cart/cart.actions'
 
 import './single-pedal.styles.scss'
 
-const SinglePedal = ({pedals, match}) => (
+const SinglePedal = ({pedals, addItems}) => {
+
+const [amount, setAmount] = useState(1)    
+
+const addAmount = () => {
+    let newAmount = amount + 1
+    setAmount(newAmount)
+}
+
+const decreaseAmount = () => {
+    let newAmount
+    if(amount === 1) {
+        return amount;
+    } else {
+        newAmount = amount - 1
+    }
+    setAmount(newAmount)
+}
+
+    return(
     <div className='single-pedal'>
         <div className='big-image'>
             <img src={pedals.imageUrl} alt='Big pedal' />
@@ -35,21 +55,22 @@ const SinglePedal = ({pedals, match}) => (
                     <div className='order'> 
                         <div className='quantity'>
                             <h4>Quantity</h4>
-                            <button>-</button>
-                            <input type='text' name='quantity' value='1' readOnly></input>
-                            <button>+</button>
+                            <button onClick={decreaseAmount}>-</button>
+                            <input type='text' name='quantity' value={amount} readOnly></input>
+                            <button onClick={addAmount}>+</button>
                         </div>
-                        <button>Add to rig</button>
+                        <button onClick={() => addItems({...pedals, amount})}>Add to rig</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        {console.log(match.params.id)}
-        {console.log(pedals)}
+        {/* {console.log(match.params.id)}
+        {console.log(pedals)} */}
         
     </div>
-)
+    )
+}
 
 const mapStateToProps = (state, props) => {
     const pedals = selectPedalItems(state)
@@ -62,7 +83,11 @@ const mapStateToProps = (state, props) => {
     pedals: searched
 })
 }
+
+const mapDispatchToProps = dispatch => ({
+    addItems: item => dispatch(addItems(item))
+})
     
 
 
-export default withRouter(connect(mapStateToProps)(SinglePedal))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(SinglePedal))
