@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import logo from '../../assets/aca-logo-test.png'
+import logo from '../../assets/alexandarfx-logo.png'
 // import cart from '../../assets/fx-pedal.svg'
 import CartIcon from '../cart-icon/cart-icon.component'
 

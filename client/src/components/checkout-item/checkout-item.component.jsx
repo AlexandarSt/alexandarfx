@@ -7,13 +7,20 @@ import { removeItem, addItem, clearItemFromCart } from '../../redux/cart/cart.ac
 const CheckoutItem = ({items, removeItem, addItem, clearItemFromCart}) => {
 
     return (
-        <div className='checkout-item'>
-            <img src={items.imageUrl} alt='Pedal' />
-            <p>{items.name}</p>
-            <p>{items.quantity} x {items.price}€</p>
-            <button onClick={() => addItem(items)}>+</button>
-            <button onClick={() => removeItem(items)}>-</button> 
-            <button onClick={() => clearItemFromCart(items)}>X</button>      
+        <div className='order-items'>    
+            <div className='checkout-items'>
+                <div className='product'>
+                    <img src={items.imageUrl} alt='Pedal' />
+                    <p>{items.name}</p>
+                </div>
+                <p>{items.price}€</p>
+                <div className='quantity'>
+                    <button onClick={() => addItem(items)}>+</button>
+                    <p>{items.quantity}</p>
+                    <button onClick={() => removeItem(items)}>-</button>
+                </div> 
+                <button onClick={() => clearItemFromCart(items)}>X</button>      
+            </div>
         </div>
     )
 }

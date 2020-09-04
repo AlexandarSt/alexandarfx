@@ -141,7 +141,7 @@ const GUITAR_PEDAL_DATA = {
         id: 15,
         name: 'Plexi Drive',
         imageUrl: '/images/guitar/drives/plexidrive/plexidrive1.jpg',
-        price: 1200,
+        price: 131,
         category: 'overdrive',
         video: '',
         description: '<p>Clone of the very popular Marvel Drive by Ramble Fx whose sound is replicating the sound of the Marshall Plexi JTM45.</p><p>The pedal sounds great, you can take this pedal instead of your favorite Marshall, connect to a club amplifier and get a world-wide sound.</p><p>The pedal circuit contains three JFET gain stages with the help of the J201 transistor, one of the gain stages is also a very popular muamp that is increasingly used in modern pedal drive designs because of the possibility of creating a higher gain level.</p><p>High quality parts used, such as: </p><ul><li>Metal film resistors</li><li>Polyester a la Wampler red film capacitors</li><li>Panasonic Electrolytic Capacitor</li><li>Yageo Electrolytic Condenser for Input Voltage Filtration</li><li>Alpha potentiometers with dust protection</li><li>The state-of-the-art relay bypass system.</li></ul><p>Parts of the Plexi drive are better than the parts used for the original Marvel Drive, look for gutshots on the internet and compare.</p>'

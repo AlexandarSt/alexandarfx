@@ -69,7 +69,7 @@ $green: #BFDD3B;
             height: fit-content;
 
             @media screen and (max-width: 1320px){
-                max-width: 300px;
+                width: auto;
                 margin: 0 auto;
                 align-self: center;
             }

@@ -1,0 +1,13 @@
+.totals-items{
+    border-bottom: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .totals-items-info{
+
+    }
+
+    .totals-items-price{
+        justify-self: self-end;
+    }
+}

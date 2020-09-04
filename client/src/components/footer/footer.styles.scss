@@ -6,6 +6,10 @@ $verydarkgrey: rgb(105, 105, 105);
     padding: 0 250px;
     border-top: 1px solid $green;
 
+    @media screen and (max-width: 1320px) {
+        padding: unset;
+    }
+
     .upper-footer{
         display: flex;
         align-items: center;
@@ -15,6 +19,11 @@ $verydarkgrey: rgb(105, 105, 105);
         justify-content: space-between;
         margin: 0 50px;
         border-bottom: 1px solid $verydarkgrey;
+
+        @media screen and (max-width: 1320px) {
+            display: unset;
+            text-align: center;
+        }
 
         ul{
             padding: 0;
@@ -37,6 +46,15 @@ $verydarkgrey: rgb(105, 105, 105);
         .social-icons{
             // margin-left: -50px;
             width: auto;
+
+            ul{
+                width: fit-content;
+                margin: 0 auto 20px auto;
+            }
+
+            @media screen and (max-width: 1320px) {
+                text-align: left;
+            }
         }
     
         .logo-footer{
@@ -62,6 +80,12 @@ $verydarkgrey: rgb(105, 105, 105);
         color: darkgrey;
         margin-left: 50px;
         padding: 20px 0;
+
+        @media screen and (max-width: 1320px) {
+            border-top: 1px solid $verydarkgrey;
+            margin-left: unset;
+            text-align: center;
+        }
     }
     
 }

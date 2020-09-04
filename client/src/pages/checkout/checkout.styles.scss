@@ -1,3 +1,86 @@
 .checkout{
-    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 50px;
+
+    @media screen and (max-width: 1320px) {
+        grid-template-columns: 2fr;
+        padding: unset;
+    }
+
+    h2{
+        text-transform: uppercase;
+        text-align: center;        
+    }
+
+    .shopping-cart{
+        width: 90%;
+
+        @media screen and (max-width: 1320px) {
+            justify-self: center;
+        }
+    }
+
+    .cart-totals{
+        margin-left: 50px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.15);
+
+        @media screen and (max-width: 1320px) {
+            width: 100%;
+            justify-self: center;
+            margin: 40px 0;
+            font-size: 0.8rem;
+
+        }
+
+        .cart-totals-content{
+            padding: 15px;
+            border: 1px solid lightgrey;
+            background-color: white;
+
+            .totals-header{
+                width: 100%;
+                padding: 10px 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                border-bottom: 1px solid darkgrey;
+                text-transform: uppercase;
+                font-weight: 600;
+
+                .totals-header-block{
+
+                    &:last-child{
+                        justify-self: self-end;
+                    }
+
+                }
+            }
+
+            .total{
+                border-top: 3px solid black;
+                text-align: right;
+                font-weight: 600;
+            }
+        }
+        
+        button{
+            width: 100%;
+            color: white;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px 0;
+            text-transform: uppercase;
+            margin-top: 5px;
+
+            &:hover{
+                background-color: #BFDD3B;
+                border-color: grey;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+        }
+    }
 }
