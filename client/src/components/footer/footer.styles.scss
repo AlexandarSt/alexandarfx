@@ -11,12 +11,13 @@ $verydarkgrey: rgb(105, 105, 105);
     }
 
     .upper-footer{
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        // align-self: center;
         background: black;
         padding: 20px 0;
         color: white;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin: 0 50px;
         border-bottom: 1px solid $verydarkgrey;
 
@@ -59,6 +60,8 @@ $verydarkgrey: rgb(105, 105, 105);
     
         .logo-footer{
             padding: 20px;
+            justify-self: flex-start;
+            align-self: center;
     
             img{
                 width: 150px;
@@ -66,6 +69,7 @@ $verydarkgrey: rgb(105, 105, 105);
         }
         
         .legal-policies{
+            justify-self: flex-end;
             
             ul{
     

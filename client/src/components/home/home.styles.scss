@@ -12,6 +12,13 @@
         width: 50%;
         position: relative;
         left: 25%;
+
+        @media screen and (max-width: 1320px) {
+             width: auto;
+             position: unset;
+             left: unset;
+             margin: 70px 15px;
+        }
     }
 }
 

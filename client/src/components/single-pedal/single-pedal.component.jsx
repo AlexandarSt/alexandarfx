@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import {selectPedalItems} from '../../redux/shop/shop.selectors'
 import {addItems} from '../../redux/cart/cart.actions'
+import ImageGallery from 'react-image-gallery' 
+
 
 import './single-pedal.styles.scss'
 
@@ -25,25 +27,31 @@ const decreaseAmount = () => {
     setAmount(newAmount)
 }
 
+const IMAGES = pedals.images.map(image => {
+    return({    
+    original: image,
+    thumbnail: image,
+    })   
+})
+    
     return(
     <div className='single-pedal'>
-        <div className='big-image'>
+        {/* <div className='big-image'>
             <img src={pedals.imageUrl} alt='Big pedal' />
-        </div>
-        <div className='images-gallery'>
-            <p>Ovde idu slike</p>
+        </div> */}
+        <div className='images-gallery'>    
+            <ImageGallery items={IMAGES} showPlayButton={false} />
         </div>
         <div className='info-order'>
             <div className='info-details'>
                 <h2>{pedals.name}</h2>
                 <div className='description'>
                     <h4><i className="fas fa-angle-right arrow" aria-hidden="true"></i>Description</h4>
-                    {/* <p>{pedals.description}</p> */}
                     <div dangerouslySetInnerHTML={{ __html: pedals.description }} />
                 </div>
                 <div className='videos'>
                     <h4><i className="fas fa-angle-right arrow" aria-hidden="true"></i>Videos</h4>
-                    <p>Ovde idu video klipovi</p>
+                    <div dangerouslySetInnerHTML={{ __html: pedals.video }} />
                 </div>
                 
             </div>
@@ -65,10 +73,6 @@ const decreaseAmount = () => {
                 </div>
             </div>
         </div>
-
-        {/* {console.log(match.params.id)}
-        {console.log(pedals)} */}
-        
     </div>
     )
 }

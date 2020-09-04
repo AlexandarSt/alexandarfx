@@ -9,30 +9,20 @@ const About = () => {
                 <img src='pedals.jpg' alt='about-image-1'/>
                 <div className='section-text'>
                     <p>
-                        Quisque fermentum neque ac magna elementum, a porta diam placerat. 
-                        Praesent turpis enim, tempor at est eu, iaculis elementum erat. 
-                        Phasellus dolor erat, tincidunt at finibus at, mollis vel nunc. 
-                        Ut eget suscipit mauris, fringilla lacinia ligula. 
-                        Morbi sagittis massa fringilla arcu fringilla pulvinar. 
-                        Sed sem ligula, pellentesque ac diam eu, semper convallis felis. 
-                        Sed fringilla, dolor eget laoreet ornare, risus nulla egestas felis, 
-                        at consequat orci dolor id arcu. Curabitur non lacinia justo, et aliquet leo. 
-                        Phasellus in pellentesque magna. Vestibulum scelerisque enim dolor, nec maximus orci tempus eu. 
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        <b>Alexandar Fx</b> is a boutique pedal making workshop that has officially existed since 2013. At the very beginning, 
+                        the models that were assembled were classic clones, and later modified and improved models were introduced in the offer, 
+                        along with original and custom designs.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien ex, 
-                        condimentum rhoncus consequat sit amet, ullamcorper eget sapien. Curabitur nibh justo, 
-                        elementum sed ipsum non, vulputate semper eros. Donec ullamcorper nibh sit amet mi egestas egestas. 
-                        Proin porta nisl felis, in congue velit fermentum at. Quisque tellus dolor, venenatis nec dui ut, 
-                        molestie ullamcorper odio. Pellentesque consectetur lacinia eros, quis fermentum magna porttitor eget. 
-                        Sed eu ligula vel sem iaculis convallis nec a sem.
+                        High quality parts are used to make guitar and bass pedals to ensure quality sound and long-lasting operation.
                     </p>
                     <p>
-                        Nullam tincidunt vitae dui quis mollis. Morbi at tortor et ipsum suscipit auctor quis sit amet orci. 
-                        Integer ultricies nisi et dictum malesuada. Curabitur vitae lacinia justo, a placerat felis. 
-                        Morbi sagittis sed augue sit amet suscipit. Vestibulum ac eleifend nunc. Morbi et tellus felis. 
-                        In eget nunc nec diam imperdiet commodo vel mollis lectus. Praesent vulputate varius rutrum.
+                        In 2015, Alexandar Fx makes a big leap in the quality of workmanship by introducing a relay clickless bypass 
+                        system that is a novelty in the world of guitar and bass pedals, a system switched to all major boutique 
+                        manufacturers such as Wampler pedals, Visual sound, Fulltone, etc., a system installed in Serbia you can only get in 
+                        Alexandar Fx pedals. In 2015, computer-engraved graphics were also introduced, with which Alexandar Fx pedals were 
+                        raised to an even higher level. In addition to the models that are officially on offer in this workshop, every musician 
+                        can order a unique custom model that will fully suit his needs.
                     </p>
                 </div>
             </div>

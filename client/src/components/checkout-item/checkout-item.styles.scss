@@ -8,7 +8,7 @@
     text-transform: uppercase;
 
     @media screen and (max-width: 1320px){
-        font-size: 0.7rem;
+        font-size: 1rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
@@ -17,7 +17,7 @@
         justify-self: center;
 
         @media screen and (max-width: 700px) {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
         }
 
         &:first-child{
@@ -37,7 +37,7 @@
     margin: 10px 0;
     
     @media screen and (max-width: 700px) {
-        font-size: 0.7rem;
+        font-size: 1rem;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 

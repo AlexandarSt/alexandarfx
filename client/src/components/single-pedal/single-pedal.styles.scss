@@ -1,4 +1,6 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
 $green: #BFDD3B;
+$whitegrey: #f0f0f0;
 
 .single-pedal{
 
@@ -18,9 +20,11 @@ $green: #BFDD3B;
     }
 
     .images-gallery{
+        display: flex;
+        justify-content: center;
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
-        background-color: lightgrey;
+        background-color: $whitegrey;
         padding: 20px 50px;
     }
 
@@ -46,16 +50,16 @@ $green: #BFDD3B;
             }
 
             h2{
-                border-bottom: 1px solid lightgrey
+                border-bottom: 1px solid lightgrey;
             }
 
             .description{
-                border-bottom: 1px solid lightgrey
+                border-bottom: 1px solid lightgrey;
             }
 
             .videos{
-                border-bottom: 1px solid lightgrey
-            }
+                border-bottom: 1px solid lightgrey;
+                }
 
             i{
                 margin-right: 5px;

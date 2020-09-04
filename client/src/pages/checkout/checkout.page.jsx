@@ -26,7 +26,7 @@ const Checkout = ({items, total}) => {
                         <span>Quantity</span>
                     </div>
                     <div className='header-block'>
-                        <span>Remove item</span>
+                        <span>Remove</span>
                     </div>
                 </div>
                 {

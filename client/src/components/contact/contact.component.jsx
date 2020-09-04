@@ -83,7 +83,7 @@ const Contact = () => {
                     <p>Our team will analyse your request and get back to you right away with either more questions, or if the request is straight-forward, with a quote.</p>
                     <ul>
                         <li><i className='fas fa-map-marker-alt'></i> Vuka Karadžića 1. 35213 Despotovac, Serbia</li>
-                        <li><i className='fas fa-mobile-alt'></i> +381 35 1234 567</li>
+                        <li><i className='fas fa-mobile-alt'></i> +381 65 8855 932</li>
                         <li><i className='fa fa-envelope'></i> office@alexandarfx.com</li>
                     </ul>
                 </div>
