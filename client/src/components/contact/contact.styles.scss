@@ -31,9 +31,9 @@ $red: red;
 }
 
 @mixin inputs-responsive {
-    @media screen and (max-width: 680px) {
-        width: fit-content;
-    }
+    // @media screen and (max-width: 680px) {
+    //     width: fit-content;
+    // }
 }
 
 @mixin alert-position{
@@ -75,8 +75,13 @@ $red: red;
         @media screen and (max-width: 680px) {
             grid-template-columns: 100%;
             grid-gap: 20px;
-            padding: 10px;
+            padding: 15px;
             margin: unset;
+        }
+
+        @media screen and (max-width: 1380px) and (min-width: 680px) {
+            grid-template-columns: 1fr;
+            margin: 210px 150px 100px 150px;           
         }
 
         .contact-info{
@@ -116,7 +121,7 @@ $red: red;
                     "button .";
 
                     @media screen and (max-width: 680px) {
-                        grid-template-columns: repeat(auto-fill, minmax(100px, 100%));
+                        grid-template-columns: 1fr 1fr;
                         grid-template-areas:  
                             "input-name input-email"
                             "message message"
@@ -178,6 +183,12 @@ $red: red;
                 @media screen and (max-width: 680px) {
                     width: 100%;
                 }
+
+                @media screen and (max-width: 870px) {
+                    width: 100%;           
+                }
+
+
 
                 &:hover{
                     color: #BFDD3B;

@@ -23,12 +23,21 @@ $green: #BFDD3B;
         padding: 0;
 
         li{
-            padding: 50px;
+            padding: 30px;
+            text-align: center;
             text-transform: uppercase;
             font-weight: 600;            
 
             .active-nav{
                 color: $green;
+            }
+
+            @media screen and (orientation: landscape){
+                padding: 20px;
+            }
+
+            @media screen and (min-width: 560px){
+                padding: 10px;
             }
         }
     }
