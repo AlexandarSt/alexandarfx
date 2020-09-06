@@ -9,6 +9,15 @@ $green: #BFDD3B;
     }
 }
 
+@mixin responsive{
+    @media screen and (max-width: 670px) {
+        visibility: hidden;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @keyframes slide-in{
     from {
         max-width: 0;
@@ -50,22 +59,20 @@ $green: #BFDD3B;
         display: flex;
         justify-content: center;
         width: 100%;
-
-        @media screen and (max-width: 670px) {
-            visibility: hidden;
-            width: 0;
-        }
+        @include responsive();
 
         ul{
             display: flex;
             list-style-type: none;
             padding: 0;
             margin-right: calc(100% - 90%);
+            @include responsive();
 
             li{
                 padding: 10px;
                 text-transform: uppercase;
                 font-weight: 600;
+                @include responsive();
 
                 a{
                     color: white;
@@ -78,6 +85,7 @@ $green: #BFDD3B;
 
                 .active-nav{
                     color: $green;
+                    @include responsive();
                 }
             }
         }
@@ -88,6 +96,7 @@ $green: #BFDD3B;
         @media screen and (max-width: 670px) {
             visibility: hidden;
             z-index: -1;
+            width: 0;
           }
 
         img{

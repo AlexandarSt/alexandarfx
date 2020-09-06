@@ -29,6 +29,7 @@
 
         @media screen and (max-width: 1320px) {
             width: 100%;
+            max-width: 300px;
             justify-self: center;
             margin: 40px 0;
             font-size: 1rem;
@@ -75,6 +76,7 @@
             padding: 10px 0;
             text-transform: uppercase;
             margin-top: 5px;
+            outline: none;
 
             &:hover{
                 background-color: #BFDD3B;

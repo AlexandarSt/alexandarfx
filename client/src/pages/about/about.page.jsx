@@ -7,9 +7,10 @@ import './about-page.styles.scss'
 const AboutPage = () => {
     return (
         <div className='about'>
-            <h1>Our story</h1>
-            <img src={logo} alt='Logo' />
-            <hr />
+            <div className='intro'>
+                <h1>Our story</h1>
+                <img src={logo} alt='Logo' />
+            </div>
             <About />
         </div>
     )

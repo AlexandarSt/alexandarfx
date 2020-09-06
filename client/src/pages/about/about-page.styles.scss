@@ -4,20 +4,43 @@ $green: #BFDD3B;
     padding: 50px 50px;
     text-align: center;
 
-    h1{
-        text-transform: uppercase;
-        font-weight: unset;
+    @media screen and (max-width: 680px){
+        padding: 10px;
     }
 
-    img{
-        width: 300px;
-        margin-bottom: 100px;
-    }
+    .intro{
+        margin: 50px auto;
+        width: 80%;
+        border-bottom: 1px solid $green;
 
-    hr{
-        margin: 0 70px 50px 70px;
-        height: 1px;
-        background-color: $green;
-        border: none; 
+        @media screen and (max-width: 680px){
+            margin-bottom: 20px;
+        }
+
+        h1{
+            text-transform: uppercase;
+            font-weight: unset;
+
+            @media screen and (max-width: 680px){
+                font-size: 1.5rem;
+            }
+        }
+    
+        img{
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 100px;
+    
+            @media screen and (max-width: 680px){
+                margin-bottom: 50px;
+            }
+        }
     }
+    
+    // hr{
+    //     margin: 0 70px 50px 70px;
+    //     height: 1px;
+    //     background-color: $green;
+    //     border: none; 
+    // }
 }

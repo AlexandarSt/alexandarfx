@@ -9,11 +9,9 @@ $green: #BFDD3B;
     height: 100vh;
     width: 50vw;
     z-index: 3;
-    // background-image: linear-gradient(to right, black , grey);
     background-color: black;
     opacity: 0.9;
     visibility: hidden;
-    // border-top: 1px solid $green;
 
     @media screen and (max-width: 670px) {
         visibility: visible;
@@ -21,8 +19,8 @@ $green: #BFDD3B;
 
     ul{
         list-style-type: none;
-        // padding: 0;
-        // margin-right: calc(100% - 90%);
+        text-align: left;
+        padding: 0;
 
         li{
             padding: 50px;

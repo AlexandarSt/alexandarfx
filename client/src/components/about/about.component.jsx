@@ -5,7 +5,7 @@ import './about.styles.scss'
 const About = () => {
     return (
         <div className='about-info'>
-            <div className='section'>
+            <div className='section-1'>
                 <img src='pedals.jpg' alt='about-image-1'/>
                 <div className='section-text'>
                     <p>
@@ -26,8 +26,8 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className='section'>
-                <div className='section-text'>
+            <div className='section-2'>
+                {/* <div className='section-text'>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis arcu eget iaculis euismod. 
                         Donec maximus facilisis urna, in maximus nulla iaculis accumsan. 
@@ -58,8 +58,11 @@ const About = () => {
                         non lacinia metus imperdiet ac. Maecenas massa ipsum, gravida vitae ultrices vitae, 
                         euismod eget massa. Sed porta justo et nunc venenatis lacinia.
                     </p>
-                </div>
-                <img src='box.jpg' alt='about-image-1'/>
+                </div> */}
+                
+                    <img src='circle.jpg' alt='about-image-1'/>
+
+                    <img src='box.jpg' alt='about-image-1'/>
             </div>
         </div>
     )

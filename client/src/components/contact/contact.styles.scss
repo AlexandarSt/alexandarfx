@@ -17,7 +17,7 @@ $red: red;
 
 @mixin inputs {
     width: 100%;
-    border: 1px solid #BFDD3B;
+    border: 1px solid $green;
     border-radius: 0;
     height: 45px;
     background-color: transparent;
@@ -26,14 +26,24 @@ $red: red;
        
         &:focus{
             outline: 0;
-            box-shadow: 0 0 0 0.2rem grey;
+            box-shadow: 0 0 0 0.2rem $green;
         }               
+}
+
+@mixin inputs-responsive {
+    @media screen and (max-width: 680px) {
+        width: fit-content;
+    }
 }
 
 @mixin alert-position{
     margin: 0;
     justify-self: center;
     align-self: center;
+
+    @media screen and (max-width: 680px){
+        grid-area: alert;
+    }
 }
 
 .contact{
@@ -45,6 +55,10 @@ $red: red;
         position: absolute;
         left: 0;
         z-index: 0;
+
+        @media screen and (max-width: 680px) {
+            position: unset;
+        }
     }
     .contact-data{
         display: grid;
@@ -56,7 +70,14 @@ $red: red;
         box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.15);
         margin: 210px 150px 100px 150px;
         // width: 70%;
-        border-radius: 5px;      
+        border-radius: 5px;  
+        
+        @media screen and (max-width: 680px) {
+            grid-template-columns: 100%;
+            grid-gap: 20px;
+            padding: 10px;
+            margin: unset;
+        }
 
         .contact-info{
             
@@ -82,7 +103,7 @@ $red: red;
         }
 
         .contact-form{
-
+    
             form{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -94,20 +115,36 @@ $red: red;
                     "message message"
                     "button .";
 
+                    @media screen and (max-width: 680px) {
+                        grid-template-columns: repeat(auto-fill, minmax(100px, 100%));
+                        grid-template-areas:  
+                            "input-name input-email"
+                            "message message"
+                            "button button"
+                            "alert alert";
+                        margin-bottom: 50px;
+                    }
+
                 #input-name{
                     @include inputs();
-                    grid-area: input-name;            
+                    grid-area: input-name;
+                    @include inputs-responsive();            
                 }
 
                 #input-email{
                     @include inputs();
-                    grid-area: input-email;            
+                    grid-area: input-email;
+                    @include inputs-responsive();             
                 }
                 
                 textarea{
                     @include inputs();
                     height: 150px !important;
                     grid-area: message;
+                    
+                    @media screen and (max-width: 680px) {
+                        width: auto;
+                    }
                 }
 
                 .form-error{
@@ -137,6 +174,10 @@ $red: red;
                 font-weight: 600;
                 border: none;
                 transition: 0.5s;
+
+                @media screen and (max-width: 680px) {
+                    width: 100%;
+                }
 
                 &:hover{
                     color: #BFDD3B;
