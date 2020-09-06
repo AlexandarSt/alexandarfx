@@ -3,6 +3,10 @@ $green: #BFDD3B;
 @mixin border{
     max-width: 0%;
     background-color: $green;
+
+    @media screen and (max-width: 680px) {
+        visibility: hidden;
+    }
 }
 
 @keyframes slide-in{
@@ -38,6 +42,7 @@ $green: #BFDD3B;
 
         img{
             width: 100%;
+            min-width: 150px;
         }
     }
 
@@ -45,6 +50,11 @@ $green: #BFDD3B;
         display: flex;
         justify-content: center;
         width: 100%;
+
+        @media screen and (max-width: 670px) {
+            visibility: hidden;
+            width: 0;
+        }
 
         ul{
             display: flex;
@@ -74,7 +84,11 @@ $green: #BFDD3B;
     }
 
     .cart{
-        // width: 200px;
+
+        @media screen and (max-width: 670px) {
+            visibility: hidden;
+            z-index: -1;
+          }
 
         img{
             width: 50px;
