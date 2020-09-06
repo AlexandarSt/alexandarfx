@@ -6,6 +6,15 @@ $green: #BFDD3B;
     grid-gap: 10px;
     margin-bottom: 20px;
 
+    @media screen and (max-width: 1320px){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 730px){
+        grid-template-columns: 1fr;
+
+    }
+
     img{
         height: 300px;
         width: 300px;
@@ -16,6 +25,10 @@ $green: #BFDD3B;
 
         &:hover{
             opacity: 0.7;
+        }
+
+        @media screen and (max-width: 730px){
+            width: 100%;
         }
     }
 
