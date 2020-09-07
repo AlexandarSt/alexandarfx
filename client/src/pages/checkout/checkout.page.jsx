@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-
+import {Link} from 'react-router-dom'
 import {selectCartItems, selectCartTotal} from '../../redux/cart/cart.selectors'
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
 import TotalsItem from '../../components/totals-item/totals-item.component' 
@@ -55,7 +55,7 @@ const Checkout = ({items, total}) => {
                     <p>Total: {total}€</p>
                     </div>
                 </div>
-                <button>Proceed to order</button>
+                <Link to='/order'><button>Proceed to order</button></Link>
             </div>
         </div>    
     )

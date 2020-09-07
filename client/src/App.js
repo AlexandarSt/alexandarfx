@@ -11,6 +11,7 @@ import ProductsPage from './pages/products/products.page'
 import SinglePedal from './components/single-pedal/single-pedal.component.jsx'
 import ContactPage from './pages/contact/contact.page'
 import Checkout from './pages/checkout/checkout.page'
+import Order from './pages/order/order.pages'
 import Footer from './components/footer/footer.component'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/products/:id" component={SinglePedal} />
               <Route exact path='/contact' component={ContactPage} />
               <Route exact path='/checkout' component={Checkout} />
+              <Route exact path='/order' component={Order} />
             </ScrollToTop>
           </Switch>
         <Footer />  

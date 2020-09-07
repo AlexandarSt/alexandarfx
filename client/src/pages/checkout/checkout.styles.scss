@@ -1,3 +1,9 @@
+@mixin hover-link {
+    color: #BFDD3B;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 .checkout{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -79,18 +85,16 @@
             outline: none;
 
             &:active{
-                background-color: #BFDD3B;
-                border-color: grey;
+                color: #BFDD3B;
                 cursor: pointer;
-                transition: 0.5s;
             }
 
             @media (hover: hover) {
                 &:hover{
-                    background-color: #BFDD3B;
-                    border-color: grey;
-                    cursor: pointer;
-                    transition: 0.5s;
+                    @include hover-link();
+                    a{
+                        @include hover-link();
+                    }
                 }
             }
             
