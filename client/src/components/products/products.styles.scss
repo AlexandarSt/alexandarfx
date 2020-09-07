@@ -16,7 +16,7 @@ $beige: #eaeaea;
         border: 1px solid $green;
         border-radius: 5px;
         padding: 30px 0 30px 30px;
-        width: 300px;
+        min-width: 300px;
         height: 150px;
 
         @media screen and (max-width: 1320px){
