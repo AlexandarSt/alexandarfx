@@ -23,10 +23,12 @@ $green: #BFDD3B;
         object-fit: cover;
         box-shadow: 0 8px 6px -7px #999;
 
-        &:hover{
-            opacity: 0.7;
+        @media (hover:hover) {
+            &:hover{
+                opacity: 0.7;
+            }
         }
-
+        
         @media screen and (max-width: 730px){
             width: 100%;
         }
@@ -44,10 +46,13 @@ $green: #BFDD3B;
             color: black;
             text-transform: uppercase;
 
-            &:hover{
-                text-decoration: underline;
-                color: $green;
+            @media (hover: hover){
+                &:hover{
+                    text-decoration: underline;
+                    color: $green;
+                }
             }
+            
         }
     }
 

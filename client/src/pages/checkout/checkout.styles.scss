@@ -78,12 +78,22 @@
             margin-top: 5px;
             outline: none;
 
-            &:hover{
+            &:active{
                 background-color: #BFDD3B;
                 border-color: grey;
                 cursor: pointer;
                 transition: 0.5s;
             }
+
+            @media (hover: hover) {
+                &:hover{
+                    background-color: #BFDD3B;
+                    border-color: grey;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+            
         }
     }
 }

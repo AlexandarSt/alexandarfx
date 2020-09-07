@@ -114,20 +114,28 @@ $red: red;
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: 10px;
                 grid-row-gap: 10px;
+                margin-bottom: 50px;
                 // grid-template-rows: 45px 150px auto;
                 grid-template-areas:  
                     "input-name input-email"
                     "message message"
                     "button .";
 
-                    @media screen and (max-width: 680px) {
+                    @media screen and (max-width: 560px) {
                         grid-template-columns: 1fr 1fr;
                         grid-template-areas:  
                             "input-name input-email"
                             "message message"
                             "button button"
                             "alert alert";
-                        margin-bottom: 50px;
+                    }
+
+                    @media screen and (min-width: 560px) and (max-width: 680px){
+                        grid-template-areas:  
+                            "input-name input-email"
+                            "message message"
+                            "button button"
+                            "alert alert";
                     }
 
                 #input-name{
@@ -180,19 +188,29 @@ $red: red;
                 border: none;
                 transition: 0.5s;
 
+                &:active{
+                    color: #BFDD3B;
+                }
+
                 @media screen and (max-width: 680px) {
                     width: 100%;
                 }
 
-                @media screen and (max-width: 870px) {
-                    width: 100%;           
+                @media screen and (max-width: 870px) and (min-width: 560px) {
+                    width: unset; 
+                    grid-template-areas:  
+                            "input-name input-name"
+                            "input-email input-email"
+                            "message message"
+                            "button alert";                 
                 }
 
 
-
-                &:hover{
-                    color: #BFDD3B;
-                    cursor: pointer;
+                @media (hover: hover){
+                    &:hover{
+                        color: #BFDD3B;
+                        cursor: pointer;
+                    }
                 }
             }
         }

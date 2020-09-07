@@ -133,12 +133,15 @@ $whitegrey: #f0f0f0;
                         text-transform: uppercase;
                         font-size: 12px;
                         
-                        &:hover{
-                            cursor: pointer;
-                            background: darkgrey;
-                            color: white;
-                            transition: 0.5s;
+                        @media (hover: hover){
+                            &:hover{
+                                cursor: pointer;
+                                background: darkgrey;
+                                color: white;
+                                transition: 0.5s;
+                            }
                         }
+                        
 
                         &:focus{
                             outline: none;

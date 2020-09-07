@@ -11,11 +11,15 @@
         padding: 2px 10px;
         text-transform: uppercase;
         font-size: 14px;
+        color: black;
 
-        &:hover{
-            background: darkgrey;
-            color: white;
-            transition: 0.5s;
+        @media (hover: hover) {
+            &:hover{
+                background: darkgrey;
+                color: white;
+                transition: 0.5s;
+            }
         }
+        
     }
 }

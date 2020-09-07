@@ -98,7 +98,13 @@ a{
     color: white;
     transition: 0.5s;
 
-    &:hover{
+    &:active {
         color: $green;
+    }
+
+    @media (hover: hover) {
+        &:hover{
+            color: $green;
+        }
     }
 }

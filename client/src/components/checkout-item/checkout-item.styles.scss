@@ -101,10 +101,12 @@
             font-size: 0.7rem;
         }
 
-        &:hover{
-            transition: 0.5s;
-            cursor: pointer;
-            background-color: lightgrey;
+        @media (hover:hover){
+            &:hover{
+                transition: 0.5s;
+                cursor: pointer;
+                background-color: lightgrey;
+            }
         }
 
         &:focus{
