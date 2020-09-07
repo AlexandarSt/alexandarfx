@@ -1,5 +1,7 @@
 $green: #BFDD3B;
 $red: red;
+$lightBeige: #f2f2f2;
+$lightGrey: #ddd;
 
 @keyframes fadein {
     from {
@@ -66,7 +68,7 @@ $red: red;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
         z-index: 1;
-        background-color: #f2f2f2;
+        background-color: $lightBeige;
         padding: 80px 50px;
         box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.15);
         margin: 210px 150px 100px 150px;
@@ -179,7 +181,7 @@ $red: red;
                 width: 60%;
                 letter-spacing: 2px;
                 background-color: black;
-                color: #ddd;
+                color: $lightGrey;
                 line-height: 40px;
                 display: inline-block;
                 border-radius: 0;
@@ -209,7 +211,7 @@ $red: red;
 
                 @media (hover: hover){
                     &:hover{
-                        color: #BFDD3B;
+                        color: $green;
                         cursor: pointer;
                     }
                 }
