@@ -1,9 +1,12 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {createStructuredSelector} from 'reselect'
+import {selectCartItemsCount} from '../../redux/cart/cart.selectors'
 import {NavLink} from 'react-router-dom'
 
 import './burger-menu.styles.scss'
 
-const BurgerMenu = ({toggle}) => {
+const BurgerMenu = ({toggle, itemCount}) => {
     return (
         <div className={`${toggle ? 'menu-show' : 'menu-hide'} burger-navigation`}>
             <ul>
@@ -22,14 +25,23 @@ const BurgerMenu = ({toggle}) => {
                         Contact
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink exact to='/checkout' activeClassName='active-nav'>
-                        Checkout (<span>NUMBER</span>)
-                    </NavLink>
-                </li>
+                {   itemCount ?
+                    <li>
+                        <NavLink exact to='/checkout' activeClassName='active-nav'>
+                            Checkout (<span> {itemCount} items </span>)
+                        </NavLink>
+                    </li>
+                    :
+                    ''
+                }
             </ul>
         </div>
     )
 }
 
-export default BurgerMenu
+
+const mapStateToProps = createStructuredSelector({
+    itemCount: selectCartItemsCount
+})
+
+export default connect(mapStateToProps)(BurgerMenu) 

@@ -21,60 +21,60 @@ const time = new Date().toLocaleTimeString();
 
 // Narudzbina
 
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-// app.post('/order/order', (req, response) => {
+app.post('/order/order', (req, response) => {
   
-//   const {
-//     firstName,
-//     lastName,
-//     address,
-//     city,
-//     phone,
-//     email,
-//     text,
-//     rng,
-//     cartItems,
-//     total
-//   } = req.body;
+  const {
+    firstName,
+    lastName,
+    address,
+    city,
+    phone,
+    email,
+    text,
+    rng,
+    cartItems,
+    total
+  } = req.body;
 
-//   const orderedItems = cartItems.map((cartItem) => {
-//     return {
-//         "name": cartItem.name,
-//         "price": cartItem.price,
-//         "quantity": cartItem.quantity,
-//         "imageUrl": cartItem.imageUrl
-//     }
-//   })
+  const orderedItems = cartItems.map((cartItem) => {
+    return {
+        "name": cartItem.name,
+        "price": cartItem.price,
+        "quantity": cartItem.quantity,
+        "imageUrl": cartItem.imageUrl
+    }
+  })
 
-//   let items = JSON.stringify({orderedItems})
-//   items = JSON.parse(items)
+  let items = JSON.stringify({orderedItems})
+  items = JSON.parse(items)
   
 
-//   const msg = {
-//     to: [process.env.MAIL,`${email}`],
-//     from: 'office@honeyfarm.com',
-//     templateId: 'd-dee0eb402e8a49aaa7422f1337be50ec',
-//     dynamic_template_data: {
-//       subject: 'Narudzbina',
-//       rng: `#${rng}`,
-//       date: `${date}`,
-//       time: `${time}`,
-//       firstName: `${firstName}`,
-//       lastName: `${lastName}`,
-//       address: `${address}`,
-//       city: `${city}`,
-//       phone: `${phone}`,
-//       email: `${email}`,
-//       text: `${text}`,
-//       total: `${total} din.`,
-//       items
-//     }
-//   }
+  const msg = {
+    to: [process.env.MAIL,`${email}`],
+    from: 'office@alexandarfx.com',
+    templateId: 'd-f7252ad5b03842689f417e6ea5930d8f',
+    dynamic_template_data: {
+      subject: 'Order',
+      rng: `#${rng}`,
+      date: `${date}`,
+      time: `${time}`,
+      firstName: `${firstName}`,
+      lastName: `${lastName}`,
+      address: `${address}`,
+      city: `${city}`,
+      phone: `${phone}`,
+      email: `${email}`,
+      text: `${text}`,
+      total: `${total}€`,
+      items
+    }
+  }
   
-//   sgMail.send(msg).then(() => console.log('Email sent succesfully!'))
-//   .catch((error) => {console.log(error)})
-// })
+  sgMail.send(msg).then(() => console.log('Email sent succesfully!'))
+  .catch((error) => {console.log(error)})
+})
 
 
 // Contact

@@ -1,14 +1,48 @@
-// .success{
-//     margin-top: 100px;
-//     text-align: center;
-//     margin-bottom: 150px;
+@mixin hover-link {
+    color: #BFDD3B;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
-//     img{
-//         width: 50px;
-//     }
+.success{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 150px;
+
+    img{
+        width: 50px;
+    }
+
+    button{
+        width: 100%;
+        max-width: 200px;
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px 0;
+        text-transform: uppercase;
+        margin-top: 5px;
+        outline: none;
+
+        &:active{
+            color: #BFDD3B;
+            cursor: pointer;
+        }
+
+        @media (hover: hover) {
+            &:hover{
+                @include hover-link();
+                a{
+                    @include hover-link();
+                }
+            }
+        }
+        
+    }
     
-//     @media screen and (max-width: 800px){
-//         padding: 0 10px;
-//         margin-bottom: 150px;
-//     }
-// }
+    @media screen and (max-width: 800px){
+        padding: 0 10px;
+        margin-bottom: 150px;
+    }
+}

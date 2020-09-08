@@ -55,7 +55,7 @@ const Products = ({pedals, filterByGuitar, filterByBass}) => {
             </div>
             <div className='pedals'>
                 <div className='filter'>
-                    <p>Guitar pedals</p>
+                    <p>Pedal type</p>
                     <div className='pedal-filters'>
                         <PedalFilter instrument={instrument} />     
                     </div>

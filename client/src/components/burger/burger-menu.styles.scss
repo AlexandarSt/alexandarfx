@@ -1,12 +1,12 @@
 $green: #BFDD3B;
 
 .burger-navigation{
-    display: flex;
-    flex-flow: column;
+    // display: flex;
+    // flex-flow: column;
     position: fixed;
     top: 102px;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 50vw;
     z-index: 3;
     background-color: black;
@@ -19,25 +19,38 @@ $green: #BFDD3B;
 
     ul{
         list-style-type: none;
-        text-align: left;
+        // text-align: left;
         padding: 0;
+        margin: 0;
+        height: calc(100% - 102px);
+        display: flex;
+        flex-direction: column;
+
 
         li{
-            padding: 30px;
-            text-align: center;
+            // padding: 30px;
+            // text-align: center;
             text-transform: uppercase;
-            font-weight: 600;            
+            font-weight: 600;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;            
 
             .active-nav{
                 color: $green;
             }
 
-            @media screen and (orientation: landscape){
-                padding: 20px;
-            }
+            // @media screen and (orientation: landscape){
+            //     padding: 20px;
+            // }
 
-            @media screen and (min-width: 560px){
-                padding: 10px;
+            // @media screen and (min-width: 560px){
+            //     padding: 10px;
+            // }
+
+            span{
+                color: #CDB074;
             }
         }
     }

@@ -44,7 +44,7 @@ const UserDetails = ({values, handleChange, handleSubmit, errors, isSubmitting})
                         label='Address'
                     />
                     {errors.address && <p className='form-error'>{errors.address}</p>}
-                    <label>City<span>*</span></label>
+                    <label>Town/City<span>*</span></label>
                     <FormInput 
                         name='city' 
                         value={values.city} 

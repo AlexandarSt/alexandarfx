@@ -13,18 +13,18 @@ const Success = ({clearCartAll}) => {
 
     return(
     <div className='success'>
-        <h1>Uspešno ste naručili!</h1>
+        <h1>Success!</h1>
         <br/>
         <img src="success.png" alt="Success" />
         <br/>
-        <h4>Vaša narudžbina je uspešno kreirana. Paket će Vam biti poslat u najkracem roku.</h4>
-        <h4>Hvala na poverenju!</h4>
+        <h4>Your order has been successfully created. The package will be sent to you as soon as possible.</h4>
+        <h4>Thank you for your trust!</h4>
         <br />
         <Link to='/'>
         <button onClick={() => {
             clearCartAll()
         }}>
-            Vrati se na početnu
+            Back to home
         </button>
         </Link>
     </div>
