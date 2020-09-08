@@ -15,7 +15,7 @@ const Success = ({clearCartAll}) => {
     <div className='success'>
         <h1>Success!</h1>
         <br/>
-        <img src="success.png" alt="Success" />
+        <img src="success-green.png" alt="Success" />
         <br/>
         <h4>Your order has been successfully created. The package will be sent to you as soon as possible.</h4>
         <h4>Thank you for your trust!</h4>
