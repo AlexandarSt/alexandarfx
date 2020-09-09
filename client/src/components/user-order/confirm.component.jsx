@@ -1,4 +1,4 @@
-import React,{ useEffect } from 'react'
+import React,{ useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
 import {connect} from 'react-redux'
@@ -9,8 +9,10 @@ import TotalsItem from '../totals-item/totals-item.component'
 import './confirm.styles.scss'
 
 
-
 const Confirm = ({cartItems, total, nextStep, prevStep, values}) => {
+
+        const [checked, setChecked] = useState(false)    
+
         useEffect(() => {
             window.scrollTo(0, 0)
         }, [])
@@ -84,11 +86,21 @@ const Confirm = ({cartItems, total, nextStep, prevStep, values}) => {
                     <p>Total: {total}€</p>
                     </div>
                 </div>
+                <div className='terms'>
+                    <label>
+                        <input type='checkbox' value='1' checked={checked} onChange={() => setChecked(!checked)}/>
+                        I agree to share the data necessary to complete this order with Alexandar Fx.
+                    </label>    
+                </div>
                 <div className='button-container'>
                     <button onClick={prevStep}>
                         Back
                     </button>
-                    <button className='place-order' id="forward" onClick={(e) =>{
+                    <button 
+                    disabled={!checked}
+                    className={!checked ? 'disabled-button' : 'place-order'} 
+                    id="forward" 
+                    onClick={(e) =>{
                         handleSubmit(e)
                         nextStep()
                     }}>

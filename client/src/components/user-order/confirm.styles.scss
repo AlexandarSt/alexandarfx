@@ -100,6 +100,13 @@ $green: #BFDD3B;
                 }
             }
 
+            .terms{
+                border: 1px solid lightgrey;
+                padding: 10px;
+                margin: 10px 0;
+                background-color: white;
+            }
+
             .button-container{
                 display: flex;
                 gap: 10px;
@@ -135,6 +142,20 @@ $green: #BFDD3B;
                     @media(hover:hover){
                         &:hover{
                             background-color: black;
+                        }
+                    }
+                }
+
+                .disabled-button{
+                    color: grey;
+                    background-color: lightgrey;
+                    border: 1px solid grey;
+
+                    @media(hover:hover){
+                        &:hover{
+                            color: grey;
+                            background-color: lightgrey;
+                            border: 1px solid grey;
                         }
                     }
                 }
